@@ -1,0 +1,20 @@
+.BookResultGrid{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    .BookResultGrid_label{
+     font-size: 15px;
+     font-weight: 700;
+     padding: 20px;
+    }
+    .BookResultGrid_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 10px;
+        padding-bottom: 20px;  
+        @media screen and (max-width: 640px) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        
+    }
+}
